@@ -1,0 +1,14 @@
+import { Pipe } from '@angular/core';
+import { isString } from '../helpers/helpers';
+export class TestPipe {
+    transform(text, pattern, flags) {
+        if (!isString(text)) {
+            return text;
+        }
+        return new RegExp(pattern, flags).test(text);
+    }
+}
+TestPipe.decorators = [
+    { type: Pipe, args: [{ name: 'test' },] }
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGVzdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uL3NyYy9uZy1waXBlcy9waXBlcy9zdHJpbmcvdGVzdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsSUFBSSxFQUFpQixNQUFNLGVBQWUsQ0FBQztBQUNwRCxPQUFPLEVBQUUsUUFBUSxFQUFFLE1BQU0sb0JBQW9CLENBQUM7QUFHOUMsTUFBTSxPQUFPLFFBQVE7SUFJbkIsU0FBUyxDQUFDLElBQVMsRUFBRSxPQUFlLEVBQUUsS0FBYztRQUNsRCxJQUFJLENBQUMsUUFBUSxDQUFDLElBQUksQ0FBQyxFQUFFO1lBQ25CLE9BQU8sSUFBSSxDQUFDO1NBQ2I7UUFFRCxPQUFPLElBQUksTUFBTSxDQUFDLE9BQU8sRUFBRSxLQUFLLENBQUMsQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7SUFDL0MsQ0FBQzs7O1lBWEYsSUFBSSxTQUFDLEVBQUUsSUFBSSxFQUFFLE1BQU0sRUFBRSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFBpcGUsIFBpcGVUcmFuc2Zvcm0gfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuaW1wb3J0IHsgaXNTdHJpbmcgfSBmcm9tICcuLi9oZWxwZXJzL2hlbHBlcnMnO1xyXG5cclxuQFBpcGUoeyBuYW1lOiAndGVzdCcgfSlcclxuZXhwb3J0IGNsYXNzIFRlc3RQaXBlIGltcGxlbWVudHMgUGlwZVRyYW5zZm9ybSB7XHJcbiAgdHJhbnNmb3JtKHRleHQ6IHN0cmluZywgcGF0dGVybjogc3RyaW5nLCBmbGFncz86IHN0cmluZyk6IGJvb2xlYW47XHJcbiAgdHJhbnNmb3JtPFQ+KHRleHQ6IFQsIHBhdHRlcm46IHN0cmluZywgZmxhZ3M/OiBzdHJpbmcpOiBUO1xyXG5cclxuICB0cmFuc2Zvcm0odGV4dDogYW55LCBwYXR0ZXJuOiBzdHJpbmcsIGZsYWdzPzogc3RyaW5nKTogYW55IHtcclxuICAgIGlmICghaXNTdHJpbmcodGV4dCkpIHtcclxuICAgICAgcmV0dXJuIHRleHQ7XHJcbiAgICB9XHJcblxyXG4gICAgcmV0dXJuIG5ldyBSZWdFeHAocGF0dGVybiwgZmxhZ3MpLnRlc3QodGV4dCk7XHJcbiAgfVxyXG59XHJcbiJdfQ==

@@ -1,0 +1,12 @@
+import { Pipe } from '@angular/core';
+export class RangePipe {
+    transform(start = 1, count = 0, step = 1) {
+        return Array(count)
+            .fill('')
+            .map((v, i) => step * i + start);
+    }
+}
+RangePipe.decorators = [
+    { type: Pipe, args: [{ name: 'range' },] }
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmFuZ2UuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi9zcmMvbmctcGlwZXMvcGlwZXMvYXJyYXkvcmFuZ2UudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxFQUFFLElBQUksRUFBaUIsTUFBTSxlQUFlLENBQUM7QUFHcEQsTUFBTSxPQUFPLFNBQVM7SUFDcEIsU0FBUyxDQUFDLFFBQWdCLENBQUMsRUFBRSxRQUFnQixDQUFDLEVBQUUsT0FBZSxDQUFDO1FBQzlELE9BQU8sS0FBSyxDQUFDLEtBQUssQ0FBQzthQUNoQixJQUFJLENBQUMsRUFBRSxDQUFDO2FBQ1IsR0FBRyxDQUFDLENBQUMsQ0FBQyxFQUFFLENBQUMsRUFBRSxFQUFFLENBQUMsSUFBSSxHQUFHLENBQUMsR0FBRyxLQUFLLENBQUMsQ0FBQztJQUNyQyxDQUFDOzs7WUFORixJQUFJLFNBQUMsRUFBRSxJQUFJLEVBQUUsT0FBTyxFQUFFIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUGlwZSwgUGlwZVRyYW5zZm9ybSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xyXG5cclxuQFBpcGUoeyBuYW1lOiAncmFuZ2UnIH0pXHJcbmV4cG9ydCBjbGFzcyBSYW5nZVBpcGUgaW1wbGVtZW50cyBQaXBlVHJhbnNmb3JtIHtcclxuICB0cmFuc2Zvcm0oc3RhcnQ6IG51bWJlciA9IDEsIGNvdW50OiBudW1iZXIgPSAwLCBzdGVwOiBudW1iZXIgPSAxKTogYW55IHtcclxuICAgIHJldHVybiBBcnJheShjb3VudClcclxuICAgICAgLmZpbGwoJycpXHJcbiAgICAgIC5tYXAoKHYsIGkpID0+IHN0ZXAgKiBpICsgc3RhcnQpO1xyXG4gIH1cclxufVxyXG4iXX0=

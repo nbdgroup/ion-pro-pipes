@@ -1,0 +1,11 @@
+import { Pipe } from '@angular/core';
+import { isFunction } from '../helpers/helpers';
+export class IsFunctionPipe {
+    transform(input) {
+        return isFunction(input);
+    }
+}
+IsFunctionPipe.decorators = [
+    { type: Pipe, args: [{ name: 'isFunction' },] }
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaXMtZnVuY3Rpb24uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi9zcmMvbmctcGlwZXMvcGlwZXMvYm9vbGVhbi9pcy1mdW5jdGlvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsSUFBSSxFQUFpQixNQUFNLGVBQWUsQ0FBQztBQUNwRCxPQUFPLEVBQUUsVUFBVSxFQUFFLE1BQU0sb0JBQW9CLENBQUM7QUFHaEQsTUFBTSxPQUFPLGNBQWM7SUFDekIsU0FBUyxDQUFDLEtBQVU7UUFDbEIsT0FBTyxVQUFVLENBQUMsS0FBSyxDQUFDLENBQUM7SUFDM0IsQ0FBQzs7O1lBSkYsSUFBSSxTQUFDLEVBQUUsSUFBSSxFQUFFLFlBQVksRUFBRSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFBpcGUsIFBpcGVUcmFuc2Zvcm0gfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuaW1wb3J0IHsgaXNGdW5jdGlvbiB9IGZyb20gJy4uL2hlbHBlcnMvaGVscGVycyc7XHJcblxyXG5AUGlwZSh7IG5hbWU6ICdpc0Z1bmN0aW9uJyB9KVxyXG5leHBvcnQgY2xhc3MgSXNGdW5jdGlvblBpcGUgaW1wbGVtZW50cyBQaXBlVHJhbnNmb3JtIHtcclxuICB0cmFuc2Zvcm0oaW5wdXQ6IGFueSk6IGJvb2xlYW4ge1xyXG4gICAgcmV0dXJuIGlzRnVuY3Rpb24oaW5wdXQpO1xyXG4gIH1cclxufVxyXG4iXX0=

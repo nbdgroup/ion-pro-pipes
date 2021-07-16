@@ -1,0 +1,33 @@
+{
+  "name": "ngx-pipes",
+  "version": "2.7.5",
+  "author": "Dan Revah",
+  "description": "Useful angular pipes",
+  "license": "MIT",
+  "keywords": [
+    "ngx",
+    "ng",
+    "angular",
+    "pipes",
+    "filters",
+    "library",
+    "ngx pipes",
+    "angular filters",
+    "angular pipes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danrevah/ngx-pipes.git"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "main": "bundles/ngx-pipes.umd.js",
+  "module": "fesm2015/ngx-pipes.js",
+  "es2015": "fesm2015/ngx-pipes.js",
+  "esm2015": "esm2015/ngx-pipes.js",
+  "fesm2015": "fesm2015/ngx-pipes.js",
+  "typings": "ngx-pipes.d.ts",
+  "metadata": "ngx-pipes.metadata.json",
+  "sideEffects": false
+}

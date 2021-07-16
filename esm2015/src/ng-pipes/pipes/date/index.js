@@ -1,0 +1,14 @@
+import { NgModule } from '@angular/core';
+import { TimeAgoPipe } from './time-ago';
+export const DATE_PIPES = [TimeAgoPipe];
+export class NgDatePipesModule {
+}
+NgDatePipesModule.decorators = [
+    { type: NgModule, args: [{
+                declarations: DATE_PIPES,
+                imports: [],
+                exports: DATE_PIPES,
+            },] }
+];
+export { TimeAgoPipe } from './time-ago';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi9zcmMvbmctcGlwZXMvcGlwZXMvZGF0ZS9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsUUFBUSxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBQ3pDLE9BQU8sRUFBRSxXQUFXLEVBQUUsTUFBTSxZQUFZLENBQUM7QUFFekMsTUFBTSxDQUFDLE1BQU0sVUFBVSxHQUFHLENBQUMsV0FBVyxDQUFDLENBQUM7QUFPeEMsTUFBTSxPQUFPLGlCQUFpQjs7O1lBTDdCLFFBQVEsU0FBQztnQkFDUixZQUFZLEVBQUUsVUFBVTtnQkFDeEIsT0FBTyxFQUFFLEVBQUU7Z0JBQ1gsT0FBTyxFQUFFLFVBQVU7YUFDcEI7O0FBR0QsT0FBTyxFQUFFLFdBQVcsRUFBRSxNQUFNLFlBQVksQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE5nTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcbmltcG9ydCB7IFRpbWVBZ29QaXBlIH0gZnJvbSAnLi90aW1lLWFnbyc7XHJcblxyXG5leHBvcnQgY29uc3QgREFURV9QSVBFUyA9IFtUaW1lQWdvUGlwZV07XHJcblxyXG5ATmdNb2R1bGUoe1xyXG4gIGRlY2xhcmF0aW9uczogREFURV9QSVBFUyxcclxuICBpbXBvcnRzOiBbXSxcclxuICBleHBvcnRzOiBEQVRFX1BJUEVTLFxyXG59KVxyXG5leHBvcnQgY2xhc3MgTmdEYXRlUGlwZXNNb2R1bGUge31cclxuXHJcbmV4cG9ydCB7IFRpbWVBZ29QaXBlIH0gZnJvbSAnLi90aW1lLWFnbyc7XHJcbiJdfQ==

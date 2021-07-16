@@ -1,0 +1,10 @@
+import { Pipe } from '@angular/core';
+export class IsIdenticalToPipe {
+    transform(input, other) {
+        return input === other;
+    }
+}
+IsIdenticalToPipe.decorators = [
+    { type: Pipe, args: [{ name: 'isIdenticalTo' },] }
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaXMtaWRlbnRpY2FsLXRvLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vc3JjL25nLXBpcGVzL3BpcGVzL2Jvb2xlYW4vaXMtaWRlbnRpY2FsLXRvLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxJQUFJLEVBQWlCLE1BQU0sZUFBZSxDQUFDO0FBR3BELE1BQU0sT0FBTyxpQkFBaUI7SUFDNUIsU0FBUyxDQUFDLEtBQVUsRUFBRSxLQUFVO1FBQzlCLE9BQU8sS0FBSyxLQUFLLEtBQUssQ0FBQztJQUN6QixDQUFDOzs7WUFKRixJQUFJLFNBQUMsRUFBRSxJQUFJLEVBQUUsZUFBZSxFQUFFIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUGlwZSwgUGlwZVRyYW5zZm9ybSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xyXG5cclxuQFBpcGUoeyBuYW1lOiAnaXNJZGVudGljYWxUbycgfSlcclxuZXhwb3J0IGNsYXNzIElzSWRlbnRpY2FsVG9QaXBlIGltcGxlbWVudHMgUGlwZVRyYW5zZm9ybSB7XHJcbiAgdHJhbnNmb3JtKGlucHV0OiBhbnksIG90aGVyOiBhbnkpOiBib29sZWFuIHtcclxuICAgIHJldHVybiBpbnB1dCA9PT0gb3RoZXI7XHJcbiAgfVxyXG59XHJcbiJdfQ==

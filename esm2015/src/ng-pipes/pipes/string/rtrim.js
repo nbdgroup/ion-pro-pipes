@@ -1,0 +1,11 @@
+import { Pipe } from '@angular/core';
+import { isString } from '../helpers/helpers';
+export class RightTrimPipe {
+    transform(text, chars = '\\s') {
+        return isString(text) ? text.replace(new RegExp(`[${chars}]+$`), '') : text;
+    }
+}
+RightTrimPipe.decorators = [
+    { type: Pipe, args: [{ name: 'rtrim' },] }
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicnRyaW0uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi9zcmMvbmctcGlwZXMvcGlwZXMvc3RyaW5nL3J0cmltLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxJQUFJLEVBQWlCLE1BQU0sZUFBZSxDQUFDO0FBQ3BELE9BQU8sRUFBRSxRQUFRLEVBQUUsTUFBTSxvQkFBb0IsQ0FBQztBQUc5QyxNQUFNLE9BQU8sYUFBYTtJQUN4QixTQUFTLENBQUMsSUFBWSxFQUFFLFFBQWdCLEtBQUs7UUFDM0MsT0FBTyxRQUFRLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxPQUFPLENBQUMsSUFBSSxNQUFNLENBQUMsSUFBSSxLQUFLLEtBQUssQ0FBQyxFQUFFLEVBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUM7SUFDOUUsQ0FBQzs7O1lBSkYsSUFBSSxTQUFDLEVBQUUsSUFBSSxFQUFFLE9BQU8sRUFBRSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFBpcGUsIFBpcGVUcmFuc2Zvcm0gfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuaW1wb3J0IHsgaXNTdHJpbmcgfSBmcm9tICcuLi9oZWxwZXJzL2hlbHBlcnMnO1xyXG5cclxuQFBpcGUoeyBuYW1lOiAncnRyaW0nIH0pXHJcbmV4cG9ydCBjbGFzcyBSaWdodFRyaW1QaXBlIGltcGxlbWVudHMgUGlwZVRyYW5zZm9ybSB7XHJcbiAgdHJhbnNmb3JtKHRleHQ6IHN0cmluZywgY2hhcnM6IHN0cmluZyA9ICdcXFxccycpOiBzdHJpbmcge1xyXG4gICAgcmV0dXJuIGlzU3RyaW5nKHRleHQpID8gdGV4dC5yZXBsYWNlKG5ldyBSZWdFeHAoYFske2NoYXJzfV0rJGApLCAnJykgOiB0ZXh0O1xyXG4gIH1cclxufVxyXG4iXX0=

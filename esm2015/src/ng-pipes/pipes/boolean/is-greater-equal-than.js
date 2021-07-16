@@ -1,0 +1,10 @@
+import { Pipe } from '@angular/core';
+export class IsGreaterEqualThanPipe {
+    transform(input, other) {
+        return input >= other;
+    }
+}
+IsGreaterEqualThanPipe.decorators = [
+    { type: Pipe, args: [{ name: 'isGreaterEqualThan' },] }
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaXMtZ3JlYXRlci1lcXVhbC10aGFuLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vc3JjL25nLXBpcGVzL3BpcGVzL2Jvb2xlYW4vaXMtZ3JlYXRlci1lcXVhbC10aGFuLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxJQUFJLEVBQWlCLE1BQU0sZUFBZSxDQUFDO0FBR3BELE1BQU0sT0FBTyxzQkFBc0I7SUFDakMsU0FBUyxDQUFDLEtBQWEsRUFBRSxLQUFhO1FBQ3BDLE9BQU8sS0FBSyxJQUFJLEtBQUssQ0FBQztJQUN4QixDQUFDOzs7WUFKRixJQUFJLFNBQUMsRUFBRSxJQUFJLEVBQUUsb0JBQW9CLEVBQUUiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQaXBlLCBQaXBlVHJhbnNmb3JtIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcblxyXG5AUGlwZSh7IG5hbWU6ICdpc0dyZWF0ZXJFcXVhbFRoYW4nIH0pXHJcbmV4cG9ydCBjbGFzcyBJc0dyZWF0ZXJFcXVhbFRoYW5QaXBlIGltcGxlbWVudHMgUGlwZVRyYW5zZm9ybSB7XHJcbiAgdHJhbnNmb3JtKGlucHV0OiBudW1iZXIsIG90aGVyOiBudW1iZXIpOiBib29sZWFuIHtcclxuICAgIHJldHVybiBpbnB1dCA+PSBvdGhlcjtcclxuICB9XHJcbn1cclxuIl19

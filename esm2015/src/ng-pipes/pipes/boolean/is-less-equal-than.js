@@ -1,0 +1,10 @@
+import { Pipe } from '@angular/core';
+export class IsLessEqualThanPipe {
+    transform(input, other) {
+        return input <= other;
+    }
+}
+IsLessEqualThanPipe.decorators = [
+    { type: Pipe, args: [{ name: 'isLessEqualThan' },] }
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaXMtbGVzcy1lcXVhbC10aGFuLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vc3JjL25nLXBpcGVzL3BpcGVzL2Jvb2xlYW4vaXMtbGVzcy1lcXVhbC10aGFuLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxJQUFJLEVBQWlCLE1BQU0sZUFBZSxDQUFDO0FBR3BELE1BQU0sT0FBTyxtQkFBbUI7SUFDOUIsU0FBUyxDQUFDLEtBQWEsRUFBRSxLQUFhO1FBQ3BDLE9BQU8sS0FBSyxJQUFJLEtBQUssQ0FBQztJQUN4QixDQUFDOzs7WUFKRixJQUFJLFNBQUMsRUFBRSxJQUFJLEVBQUUsaUJBQWlCLEVBQUUiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQaXBlLCBQaXBlVHJhbnNmb3JtIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcblxyXG5AUGlwZSh7IG5hbWU6ICdpc0xlc3NFcXVhbFRoYW4nIH0pXHJcbmV4cG9ydCBjbGFzcyBJc0xlc3NFcXVhbFRoYW5QaXBlIGltcGxlbWVudHMgUGlwZVRyYW5zZm9ybSB7XHJcbiAgdHJhbnNmb3JtKGlucHV0OiBudW1iZXIsIG90aGVyOiBudW1iZXIpOiBib29sZWFuIHtcclxuICAgIHJldHVybiBpbnB1dCA8PSBvdGhlcjtcclxuICB9XHJcbn1cclxuIl19

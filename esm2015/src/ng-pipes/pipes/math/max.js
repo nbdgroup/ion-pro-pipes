@@ -1,0 +1,10 @@
+import { Pipe } from '@angular/core';
+export class MaxPipe {
+    transform(arr) {
+        return Array.isArray(arr) ? Math.max(...arr) : arr;
+    }
+}
+MaxPipe.decorators = [
+    { type: Pipe, args: [{ name: 'max' },] }
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWF4LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vc3JjL25nLXBpcGVzL3BpcGVzL21hdGgvbWF4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxJQUFJLEVBQWlCLE1BQU0sZUFBZSxDQUFDO0FBR3BELE1BQU0sT0FBTyxPQUFPO0lBQ2xCLFNBQVMsQ0FBQyxHQUFRO1FBQ2hCLE9BQU8sS0FBSyxDQUFDLE9BQU8sQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLEdBQUcsQ0FBQyxHQUFHLEdBQUcsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUM7SUFDckQsQ0FBQzs7O1lBSkYsSUFBSSxTQUFDLEVBQUUsSUFBSSxFQUFFLEtBQUssRUFBRSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFBpcGUsIFBpcGVUcmFuc2Zvcm0gfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuXHJcbkBQaXBlKHsgbmFtZTogJ21heCcgfSlcclxuZXhwb3J0IGNsYXNzIE1heFBpcGUgaW1wbGVtZW50cyBQaXBlVHJhbnNmb3JtIHtcclxuICB0cmFuc2Zvcm0oYXJyOiBhbnkpOiBudW1iZXIgfCBudW1iZXJbXSB7XHJcbiAgICByZXR1cm4gQXJyYXkuaXNBcnJheShhcnIpID8gTWF0aC5tYXgoLi4uYXJyKSA6IGFycjtcclxuICB9XHJcbn1cclxuIl19

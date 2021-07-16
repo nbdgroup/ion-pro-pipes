@@ -1,0 +1,11 @@
+import { Pipe } from '@angular/core';
+import { isUndefined } from '../helpers/helpers';
+export class IsDefinedPipe {
+    transform(input) {
+        return !isUndefined(input);
+    }
+}
+IsDefinedPipe.decorators = [
+    { type: Pipe, args: [{ name: 'isDefined' },] }
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaXMtZGVmaW5lZC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uL3NyYy9uZy1waXBlcy9waXBlcy9ib29sZWFuL2lzLWRlZmluZWQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxFQUFFLElBQUksRUFBaUIsTUFBTSxlQUFlLENBQUM7QUFDcEQsT0FBTyxFQUFFLFdBQVcsRUFBRSxNQUFNLG9CQUFvQixDQUFDO0FBR2pELE1BQU0sT0FBTyxhQUFhO0lBQ3hCLFNBQVMsQ0FBQyxLQUFVO1FBQ2xCLE9BQU8sQ0FBQyxXQUFXLENBQUMsS0FBSyxDQUFDLENBQUM7SUFDN0IsQ0FBQzs7O1lBSkYsSUFBSSxTQUFDLEVBQUUsSUFBSSxFQUFFLFdBQVcsRUFBRSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFBpcGUsIFBpcGVUcmFuc2Zvcm0gfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuaW1wb3J0IHsgaXNVbmRlZmluZWQgfSBmcm9tICcuLi9oZWxwZXJzL2hlbHBlcnMnO1xyXG5cclxuQFBpcGUoeyBuYW1lOiAnaXNEZWZpbmVkJyB9KVxyXG5leHBvcnQgY2xhc3MgSXNEZWZpbmVkUGlwZSBpbXBsZW1lbnRzIFBpcGVUcmFuc2Zvcm0ge1xyXG4gIHRyYW5zZm9ybShpbnB1dDogYW55KTogYm9vbGVhbiB7XHJcbiAgICByZXR1cm4gIWlzVW5kZWZpbmVkKGlucHV0KTtcclxuICB9XHJcbn1cclxuIl19
